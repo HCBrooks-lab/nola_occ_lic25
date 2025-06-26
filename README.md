@@ -5,7 +5,7 @@ This project analyzes New Orleans business license data to uncover trends in whe
 ---
 
 
-## Sample Visualization 
+## Sample Visualization
 
 ![Business Start Trends](business_starts_trend.png)
 
