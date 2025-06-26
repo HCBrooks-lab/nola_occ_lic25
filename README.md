@@ -1,13 +1,23 @@
-# NOLA Occupational Licenses (2025)
+# NOLA Occupational Business Licenses (2025)
 This project analyzes New Orleans business license data to uncover trends in when businesses offically began operations. 
 
 
 ---
 
 
-## Sample Visualization
+## Sample Visualizations
 
 ![Business Start Trends](business_starts_trend.png)
+
+- To provide geopgraphic context, and interactive map was added using 'folium'
+  showing the density of businesses across New Orleans. Each dot on the map
+  represents a business, and clusters highlight areas of activity. This
+  visualization helps identify commerical zones and areas with potential saturation
+  or opportunity.
+
+![View the Interactive Business Density Map](business_density_map.html)
+
+
 
 
 ---
@@ -61,7 +71,11 @@ This project analyzes New Orleans business license data to uncover trends in whe
 
 - **Strong Rebound(2021-2025):** A surge in new businesses from 2021 onward
   reflect post-pandemic resilience, more remote work/startup flexibility,
-  or renewed interest in local economic participation. 
+  or renewed interest in local economic participation.
+
+- **Interactive Map:** Built using folium and MarkerCluster, visualizing business
+  concentration across the city. Data points include business names as popup markers.
+  Map centers on average coordinates in New Orleans. 
 
 
 ---
@@ -90,6 +104,9 @@ This project analyzes New Orleans business license data to uncover trends in whe
 - Pandas
 - Matplotlib
 - Git and Github
+- folium
+- MarkerCluster
+- Leaflet|OpenStreetMap 
 
 
 ---
@@ -98,7 +115,7 @@ This project analyzes New Orleans business license data to uncover trends in whe
 ## Future Additions
 
 - Breakdown by business type or ZIP code.
-- Mapping business density with latitude/longitude. 
+- Outlier & anomoly detection. 
 - Insights into post-COVID trends or economic recovery.
 
 
