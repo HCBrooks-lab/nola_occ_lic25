@@ -72,7 +72,9 @@ This project analyzes New Orleans business license data to uncover trends in whe
 - 'README.md' | Project overview, datasat summary, goals, tools used, and
    future additions.
 - 'business_starts_trend.png' | Bar chart visualizing the number of new
-   businesses started each year from 2000-2025.
+   businesses started each year from (1900-2025).
+- 'top_business_types.png' | Visualization of the top 10 most common businesses
+   in New Orleans (2025). 
 - `active_occ_licenses_2025.csv` | Raw dataset downloaded from data.nola.gov 
 - `nola_occ_lic_analysis.ipynb` | Jupyter Notebook containing the data
    analysis and visualizations.
