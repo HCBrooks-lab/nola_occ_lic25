@@ -15,7 +15,7 @@ This project analyzes New Orleans business license data to uncover trends in whe
   visualization helps identify commerical zones and areas with potential saturation
   or opportunity.
 
-![View the Interactive Business Density Map](business_density_map.html)
+![View the Interactive Business Density Map](business_density_map.png)
 
 
 
