@@ -17,9 +17,7 @@ This project analyzes New Orleans business license data to uncover trends in whe
 
 ![View the Interactive Business Density Map](business_map.png)
 
-
 ---
-
 
 ## Dataset
 
@@ -28,9 +26,7 @@ This project analyzes New Orleans business license data to uncover trends in whe
 - **Last Updated**: June 12, 2025
 - **File**: 'active_occ_licenses_2025.csv'
 
-
 ---
-
 
 ## Project Objective
 
@@ -38,9 +34,7 @@ This project analyzes New Orleans business license data to uncover trends in whe
 - Visualize trends in business formation over time
 - Compare historical trens vs. recent activity (e.g., 2000-2025)
 
-
 ---
-
 
 ## Current Analysis Highlights 
 
@@ -51,7 +45,6 @@ This project analyzes New Orleans business license data to uncover trends in whe
   - Recent growth from 2000 onwward
  
 ---
-
 
 ## Insights & Takeaways
 
@@ -76,9 +69,13 @@ This project analyzes New Orleans business license data to uncover trends in whe
   Map centers on average coordinates in New Orleans.
   **[Open Interactive Map](https://spontaneous-salamander-630181.neetlify.app/)**
 
+- **Geographic Anomalies:** The dataset is focused on New Orleans business licenses, however a small c
+  cluster of licenses appear in Texas. This may be due to:
+    - Companies headquartered in New Orleans, but operating in Texas.
+    - Remote/Regional license addresses tied to corpoate offices.
+    - Data entry inconsistencies in business location fields. 
 
 ---
-
 
 ## Files Included
 
@@ -92,9 +89,7 @@ This project analyzes New Orleans business license data to uncover trends in whe
 - `nola_occ_lic_analysis.ipynb` | Jupyter Notebook containing the data
    analysis and visualizations.
 
-
 ---
-
 
 ## Tools Used
 
@@ -108,9 +103,7 @@ This project analyzes New Orleans business license data to uncover trends in whe
 - MarkerCluster
 - Leaflet|OpenStreetMap 
 
-
 ---
-
 
 ## Future Additions
 
@@ -118,9 +111,7 @@ This project analyzes New Orleans business license data to uncover trends in whe
 - Outlier & anomoly detection. 
 - Insights into post-COVID trends or economic recovery.
 
-
 ---
-
 
 ## Understanding the Dataset Columns
 
@@ -132,8 +123,6 @@ The dataset includes 20 fields related to licensed businesses in New Orleans, su
 
 Full column description and sample values are available in the [nola_occ_lic_analysis.ipynb](./nola_occ_lic_analysis.ipynb)). 
 
-
 ---
-
 
 *This project is part of an entry-level data analysis portfolio. For questions or collaboration, feel free to reach out!*
