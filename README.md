@@ -69,8 +69,7 @@ This project analyzes New Orleans business license data to uncover trends in whe
   Map centers on average coordinates in New Orleans.
   **[Open Interactive Map](https://spontaneous-salamander-630181.neetlify.app/)**
 
-- **Geographic Anomalies:** The dataset is focused on New Orleans business licenses, however a small c
-  cluster of licenses appear in Texas. This may be due to:
+- **Geographic Anomalies:** The dataset is focused on New Orleans business licenses, however a small    cluster of licenses appear in Texas. This may be due to:
     - Companies headquartered in New Orleans, but operating in Texas.
     - Remote/Regional license addresses tied to corpoate offices.
     - Data entry inconsistencies in business location fields. 
