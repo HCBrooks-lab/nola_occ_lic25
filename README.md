@@ -73,7 +73,8 @@ This project analyzes New Orleans business license data to uncover trends in whe
 
 - **Interactive Map:** Built using folium and MarkerCluster, visualizing business
   concentration across the city. Data points include business names as popup markers.
-  Map centers on average coordinates in New Orleans. 
+  Map centers on average coordinates in New Orleans.
+  **[Open Interactive Map](https://spontaneous-salamander-630181.neetlify.app/)**
 
 
 ---
@@ -98,11 +99,12 @@ This project analyzes New Orleans business license data to uncover trends in whe
 ## Tools Used
 
 - Python
+- VS Code
 - Jupyter Notebook
 - Pandas
 - Matplotlib
 - Git and Github
-- folium
+- Folium
 - MarkerCluster
 - Leaflet|OpenStreetMap 
 
