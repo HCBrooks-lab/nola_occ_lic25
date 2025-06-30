@@ -67,7 +67,7 @@ This project analyzes New Orleans business license data to uncover trends in whe
 - **Interactive Map:** Built using folium and MarkerCluster, visualizing business
   concentration across the city. Data points include business names as popup markers.
   Map centers on average coordinates in New Orleans.
-  **[Open Interactive Map](https://spontaneous-salamander-630181.neetlify.app/)**
+  **[Open Interactive Map](https://spontaneous-salamander-630181.netlify.app/)**
 
 - **Geographic Anomalies:** The dataset is focused on New Orleans business licenses, however a small    cluster of licenses appear in Texas. This may be due to:
     - Companies headquartered in New Orleans, but operating in Texas.
