@@ -7,7 +7,6 @@ This project analyzes New Orleans business license data to uncover trends in whe
 
 - **Source**: [City of New Orleans Open Data Portal](https://data.nola.gov/)
 - **Dataset**: *Active Occupational Licenses*
-- **Last Updated**: June 12, 2025
 - **File**: 'active_occ_licenses_2025.csv'
 
 ---
