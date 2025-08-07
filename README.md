@@ -1,5 +1,5 @@
 # NOLA Occupational Business Licenses (2025)
-This project analyzes New Orleans business license data to uncover trends in when businesses offically began operations. 
+This project analyzes New Orleans business license data to uncover trends in when businesses officially began operations. 
 
 ---
 
