@@ -25,10 +25,10 @@ This project analyzes New Orleans business license data to uncover trends in whe
 
 ![Business Start Trends](business_starts_trend.png)
 
-- To provide geopgraphic context, and interactive map was added using 'folium'
+- To provide geographic context, and interactive map was added using 'folium'
   showing the density of businesses across New Orleans. Each dot on the map
   represents a business, and clusters highlight areas of activity. This
-  visualization helps identify commerical zones and areas with potential saturation
+  visualization helps identify commercial zones and areas with potential saturation
   or opportunity.
 
 ![View the Interactive Business Density Map](business_map.png)
@@ -52,7 +52,7 @@ This project analyzes New Orleans business license data to uncover trends in whe
   concentration across the city. Data points include business names as popup markers.
   Map centers on average coordinates in New Orleans.
   **[Open Interactive Map](https://spontaneous-salamander-630181.netlify.app/)**
-- **Geographic Anomalies:** Some licenses reflect Texax/West Africa addresses (HQ in
+- **Geographic Anomalies:** Some licenses reflect Texas/West Africa addresses (HQ in
   New Orleans or remote offices). 
 
 ---
