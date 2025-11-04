@@ -1,98 +1,67 @@
-# NOLA Occupational Business Licenses (2025)
-This project analyzes New Orleans business license data to uncover trends in when businesses officially began operations. 
+## NOLA Occupational License Analysis
+This project analyzes New Orleans occupational license data to show trends in business activity across the city from 2015 to 2025. Using Python and pandas, the analysis identifies seasonal patterns in business openings, highlights ZIP codes with the highest concentration of businesses, and explores how business types are distributed across the area. 
 
 ---
 
-## Dataset
+## Key Features
+  # Data Cleaning & Preparation
+  - Removed `business_name` entries to maintain data integrity.
+  - Converted `business_start_date` to datetime format for time-based review.
+  - Extracted `business_start_year` and `year_month` for temporal insights.
 
-- **Source**: [City of New Orleans Open Data Portal](https://data.nola.gov/)
-- **Dataset**: *Active Occupational Licenses*
-- **File**: 'active_occ_licenses_2025.csv'
+  # Trend Analysis
+  - Visualized business openings from 2015-2025, showing seasonal surges.
+  - Highlighted 6-month intervals for readability while keeping underlying trends.
 
----
+  # ZIP Code Analysis
+  - Identified the top 10 ZIP codes with the highest number of licensed businesses.
+  - Visualized results using a horizontal bar chart to business clustering in zones with
+    higher activity such as 70016, 70130, and 70119.
 
-## Current Highlights 
-
-- Parsed & converted business start dates.
-- Extracted year & month for trend and seasonal analysis. 
-- Visualized:
-  - Trends by year.
-  - Business openings after Hurricane Katrina (2006-Present).
-- Interactive business density map using Folium & MarkerCluster. 
-
-
-## Sample Visualizations
-
-![Business Start Trends](business_starts_trend.png)
-
-- To provide geographic context, and interactive map was added using 'folium'
-  showing the density of businesses across New Orleans. Each dot on the map
-  represents a business, and clusters highlight areas of activity. This
-  visualization helps identify commercial zones and areas with potential saturation
-  or opportunity.
-
-![View the Interactive Business Density Map](business_map.png)
-
----
-
-## Project Objective
-
-- Perform exploratory data analysis (EDA) on business start dates
-- Visualize trends in business formation over time
-
----
-
-## Insights & Takeaways
-
-- **Post-2005 Recovery:** Noticeable rise after Hurricane Katrina
-- **Steady Growth (2010-2019):** Strong entrepreneurial activity
-- **Pandemic Impact (2020):** Small dip in openings 
-- **Strong Rebound(2021-2025):** Significant growth
-- **Interactive Map:** Built using folium and MarkerCluster, visualizing business
-  concentration across the city. Data points include business names as popup markers.
-  Map centers on average coordinates in New Orleans.
-  **[Open Interactive Map](https://spontaneous-salamander-630181.netlify.app/)**
-- **Geographic Anomalies:** Some licenses reflect Texas/West Africa addresses (HQ in
-  New Orleans or remote offices). 
-
----
-
-## Future Additions/Progress Tracker
-
-- Breakdown by business type or ZIP code (completed).
-- Outlier & anomoly detection. 
-- Insights into post-COVID trends or economic recovery.
-
----
+  # Notebook Organization
+  - Markdown sections show/describe each step: data cleaning, feature extraction,
+    visualization, and interpretation.
+  - Sequential logic for easy reproducibility.
 
 ## Tools Used
-
-- Python, Pandas, Matplotlib, Folium, MarkerCluster
-- Jupyter Notebook/VS Code
-- Git & GitHub
-- Leaflet | OpenStreetMap
+  - Python (pandas, matplotlib)
+  - Jupyter Notebook/VS Code
+  - CSV Data Source: `active_occ_licenses_2025.csv`
 
 ---
 
-## Files Included
+## Visuals
+# 1. Business Start Trends (2015-2025)
+  This line chart visualizes how new business openings in the city have fluctuated over 
+  the last decade. It shows possible seasonal surges tied to city events, tourism 
+  patterns, or administrative cycles. 
 
-- nola_occ_lic_analysis.ipynb: Analysis & visualizations
-- active_occ_licenses_2025.csv: Dataset
-- business_starts_trend.png: Yearly trends chart
-- business_map.png: Business density map
+  ![Business Start Trends](business_starts_trend.png)
 
----
-
-## Understanding the Dataset Columns
-
-The dataset includes 20 fields related to licensed businesses in New Orleans, such as:
-- Business name & address
-- License type & ID
-- Start date & owner
-- Location coordinates (latitude, longitude, GIS point)
-
-Full column description and sample values are available in the [nola_occ_lic_analysis.ipynb](./nola_occ_lic_analysis.ipynb)). 
+# 2. Business Density Map (Interactive View)
+  To show geographic context, an interactive density map was created using `folium`, 
+  which shows spatial distribution of licensed businesses around New Orleans. Each
+  point represents a business, with clusters showing areas of high concentration, often 
+  near commercial or tourist areas. 
+  
+  ![View the Interactive Business Density Map](business_map.png)
 
 ---
 
-*This project is part of an entry-level data analysis portfolio. For questions or collaboration, feel free to reach out!*
+## Future Additions & Target Timeline
+# 1. Business Type by ZIP Code Heatmap - By 11-10-25. 
+# 2. Expanded Interactive Map (Folium) - By 11-15-25.
+# 3. Year/Year Growth - By 11-20-25. 
+# 4. Optional Dashboard - By 11-30-25. 
+
+### Purpose of Roadmap
+These milestones outline a clear path for continuing project development while demonstrating:
+- Consistent use of data visualization and storytelling.
+- Growth into geospatial and dashboarding tools for analytics communication.
+- Realistic time management and project planning. 
+
+
+
+
+
+
