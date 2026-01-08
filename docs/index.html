@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOLA Business License Interactive Maps</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background: #111827;
+      padding: 40px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    p.subtitle {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      font-weight: 300;
+      opacity: 0.85;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #111827;
+    }
+
+    ul.map-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.map-list li {
+      background: white;
+      margin: 15px 0;
+      border-radius: 10px;
+      padding: 18px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    ul.map-list li:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.10);
+    }
+
+    ul.map-list li a {
+      text-decoration: none;
+      color: #2563eb;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 40px 0;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>NOLA Business License Interactive Maps</h1>
+    <p class = "subtitle">Explore business activity, density, and spatial trends across New Orleans.</p>
+  </header>
+
+  <div class = "container">
+    <h2>Select a Map:</h2>
+
+    <ul class="map-list">
+      <li><a href = "business_density_map.html">Business Density Map</a></li>
+      <li><a href = "business_heatmap.html">Business Heatmap</a></li>
+      <li><a href = "expanded_interactive_map.html">Expanded Interactive Map</a></li>
+      <li><a href = "zip_map.html">ZIP Code Business Map</a></li>
+    </ul>
+
+    <h2>Coming Soon</h2>
+    <p>Additional visualizations and interactive dashboards are currently in development.</p>
+  </div>
+
+  <footer>
+    © 2025 HC Brooks — Data Projects & Visual Analytics
+  </footer>
+</body>
+</html>
