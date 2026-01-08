@@ -47,19 +47,10 @@ This project analyzes New Orleans occupational license data to show trends in bu
 
 ## Visuals
 # 1. Business Start Trends (2015-2025)
-  This line chart visualizes how new business openings in the city have          
-  fluctuated over the last decade. It shows possible seasonal surges tied to city 
-  events, tourism patterns, or administrative cycles. 
-
-  ![Business Start Trends](business_starts_trend.png)
+  <!-- Updated Business Starts trend chart coming soon -->
 
 # 2. Business Density Map (Interactive View)
-  To show geographic context, an interactive density map was created using   
-  `folium`, which shows spatial distribution of licensed businesses around   New 
-  Orleans. Each point represents a business, with clusters showing     
-  areas of high concentration, often near commercial or tourist areas. 
-  
-  ![View the Interactive Business Density Map](business_map.png)
+  <!-- Updated Interactive Map coming soon -->
 
 ---
 
