@@ -36,6 +36,8 @@ This project analyzes New Orleans occupational license data to show trends in bu
     extraction,visualization, and interpretation.
   - Sequential logic for easy reproducibility.
 
+---
+
 ## Tools Used
   - Python (pandas, matplotlib)
   - Jupyter Notebook/VS Code
@@ -45,23 +47,38 @@ This project analyzes New Orleans occupational license data to show trends in bu
 
 ## Visuals
 # 1. Business Start Trends (2015-2025)
-  This line chart visualizes how new business openings in the city have      fluctuated over the last decade. It shows possible seasonal surges tied    to city events, tourism patterns, or administrative cycles. 
+  This line chart visualizes how new business openings in the city have          
+  fluctuated over the last decade. It shows possible seasonal surges tied to city 
+  events, tourism patterns, or administrative cycles. 
 
   ![Business Start Trends](business_starts_trend.png)
 
 # 2. Business Density Map (Interactive View)
-  To show geographic context, an interactive density map was created using   `folium`, which shows spatial distribution of licensed businesses around   New Orleans. Each point represents a business, with clusters showing     
+  To show geographic context, an interactive density map was created using   
+  `folium`, which shows spatial distribution of licensed businesses around   New 
+  Orleans. Each point represents a business, with clusters showing     
   areas of high concentration, often near commercial or tourist areas. 
   
   ![View the Interactive Business Density Map](business_map.png)
 
 ---
 
+## Key Enhancements & Recent Updates
+- Added Q4 focused analysis identifying the most common business types starting
+  between Oct-Dec.
+- Used logic selecting the most recent year with sufficient Q4 records to avoid
+  sparse or misleading results.
+- Cleaned and validated business start dates, handling sentinel/invalid values.
+- Improved business type aggregation/labeling for clearer categorical comparisons.
+- Generated/saved publication-ready bar charts for portfolio and README use. 
+
+---
+
 ## Potential Extensions
-- Business type distribution by ZIP code (heatmap)
-- Expanded interactive mapping using Folium
-- Year-over-year business growth analysis
-- Optional dashboard for summary insights
+- Optional dashboard for high-level summary insights (e.g. Power BI or Streamlit)
+- Deeper temporal analysis (e.g. seasonal trends after Q4) 
+
+---
 
 ### Purpose of Roadmap
 These milestones outline a clear path for continuing project development while showing examples of:
