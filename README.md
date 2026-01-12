@@ -1,5 +1,5 @@
 ## NOLA Occupational License Analysis
-This project analyzes New Orleans occupational license data to show trends in business activity across the city from 2015 to 2025. Using Python and pandas, the analysis identifies seasonal patterns in business openings, highlights ZIP codes with the highest concentration of businesses, and explores how business types are distributed across the area. 
+This project analyzes New Orleans occupational license data to show trends in business activity across the city from 1990 to 2025. Using Python and pandas, the analysis identifies seasonal patterns in business openings, highlights ZIP codes with the highest concentration of businesses, and explores how business types are distributed across the area. 
 
 ## How to Read This Project
 This analysis is organized to move from data cleaning and exploration into geographic and
@@ -28,7 +28,7 @@ trend-based insights, with each visual tied to a specific business or policy que
   - Extracted `business_start_year` and `year_month` for temporal insights.
 
   # Trend Analysis
-  - Visualized business openings from 2015-2025, showing seasonal surges.
+  - Visualized business openings from 1990-2025, showing seasonal surges.
   - Highlighted 6-month intervals for readability while keeping underlying
     trends.
 
@@ -52,7 +52,7 @@ trend-based insights, with each visual tied to a specific business or policy que
 ---
 
 ## Visuals
-# 1. Business Start Trends (2015-2025)
+# 1. Business Start Trends (1990-2025)
   <!-- Updated Business Starts trend chart coming soon -->
 
 # 2. Business Density Map (Interactive View)
