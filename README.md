@@ -1,90 +1,99 @@
-## NOLA Occupational License Analysis
-This project analyzes New Orleans occupational license data to show trends in business activity across the city from 1990 to 2025. Using Python and pandas, the analysis identifies seasonal patterns in business openings, highlights ZIP codes with the highest concentration of businesses, and explores how business types are distributed across the area. 
+# New Orleans Business License Analysis
 
-## How to Read This Project
-This analysis is organized to move from data cleaning and exploration into geographic and
-trend-based insights, with each visual tied to a specific business or policy question. 
-- Queries are written for maintainability and clarity over cleverness.
-- Each file is self-contained.
-- Comments describe business purpose, not just SQL mechanics. 
+## Project Overview
 
----
+This project analyzes active business license data for the City of New Orleans to understand **business growth trends, seasonality, and geographic concentration**. The goal is to turn raw public records into clear, decision‑ready insights using Python, pandas, and data visuals.
 
-## Key Findings
-- A small number of business license types account for a disproportionate share of overall 
-  business activity in New Orleans, which indicates concentration in specific industries.
-- Business density shows clear geographic clustering rather than uniformed distribution
-  across the city. 
-- These patterns give actionable insight for city planning, economic development
-  initiatives, and area-based market research. 
+The analysis focuses on:
+
+* How business openings change over time.
+* Seasonal patterns (especially Q4 activity).
+* The most common types of businesses.
+* Where businesses are concentrated across the city.
 
 ---
 
-## Key Features
-  # Data Cleaning & Preparation
-  - Removed `business_name` entries to maintain data integrity.
-  - Converted `business_start_date` to datetime format for time-based
-    review.
-  - Extracted `business_start_year` and `year_month` for temporal insights.
+## Dataset
 
-  # Trend Analysis
-  - Visualized business openings from 1990-2025, showing seasonal surges.
-  - Highlighted 6-month intervals for readability while keeping underlying
-    trends.
+* **Source:** City of New Orleans – Active Occupational Licenses
+* **Records:** ~10,900 businesses
+* **Time Range:** 2000–2026
+* **Granularity:** Individual business license records
 
-  # ZIP Code Analysis
-  - Identified the top 10 ZIP codes with the highest number of licensed businesses.
-  - Visualized results using a horizontal bar chart to business clustering in zones with
-    higher activity such as 70016, 70130, and 70119.
-
-  # Notebook Organization
-  - Markdown sections show/describe each step: data cleaning, feature extraction,
-    visualization, and interpretation.
-  - Sequential logic for easy reproducibility.
+Basic cleaning was performed before analysis (column normalization, date parsing, ZIP cleanup, and removal of records missing required identifiers).
 
 ---
 
-## Tools Used
-  - Python (pandas, matplotlib)
-  - Jupyter Notebook/VS Code
-  - CSV Data Source: `active_occ_licenses_2025.csv`
+## Key Analyses & Visuals
+
+### 1. Business Starts Over Time (2000–2026)
+
+This chart shows how many new businesses started each year. It highlights long‑term growth patterns and year‑to‑year fluctuations rather than focusing on individual business details.
+
+![Business Starts Over Time](images/business_starts_over_time.png)
 
 ---
 
-## Visuals
-# 1. Business Start Trends (1990-2025)
-  <!-- Updated Business Starts trend chart coming soon -->
+### 2. Q4 Business Starts by Year
 
-# 2. Business Density Map (Interactive View)
-  <!-- Updated Interactive Map coming soon -->
+This chart focuses only on **Q4 (October–December)** business starts. Looking at Q4 separately helps reveal seasonal behavior tied to tourism, holidays, and year‑end planning.
 
----
-
-## Key Enhancements & Recent Updates
-- Added Q4 focused analysis identifying the most common business types starting between Oct-
-  Dec.
-- Used logic selecting the most recent year with sufficient Q4 records to avoid sparse or
-  misleading results.
-- Cleaned and validated business start dates, handling sentinel/invalid values.
-- Improved business type aggregation/labeling for clearer categorical comparisons.
-- Generated/saved publication-ready bar charts for portfolio and README use. 
+![Q4 Business Starts by Year](images/q4_business_starts_by_year.png)
 
 ---
 
-## Potential Extensions
-- Optional dashboard for high-level summary insights (e.g. Power BI or Streamlit)
-- Deeper temporal analysis (e.g. seasonal trends after Q4) 
+### 3. Top 10 Business Types in Q4 (2000–2026)
+
+This bar chart shows the **most common business types that start during Q4** across all years. It highlights which industries are most active at year‑end.
+
+![Top 10 Q4 Business Types](images/top_10_business_types_q4.png)
 
 ---
 
-### Purpose of Roadmap
-These milestones outline a clear path for continuing project development while showing examples of:
-- Consistent use of data visualization and storytelling.
-- Growth into geospatial and dashboarding tools for analytics communication.
-- Realistic time management and project planning. 
+### 4. Top 5 Business Types Overall (2000–2026)
 
+This chart shows the five most common business types across the full dataset. It provides a high‑level view of the industries that dominate business activity in New Orleans.
 
+![Top 5 Business Types Overall](images/top_5_business_types_overall.png)
 
+---
 
+### 5. Year‑over‑Year Business Growth Trend
 
+This line chart visualizes overall year‑over‑year changes in new business starts. It helps distinguish short‑term dips from longer‑term recovery and growth trends.
 
+![Year‑over‑Year Growth Trend](images/yoy_business_growth_trend.png)
+
+---
+
+### 6. Geographic Business Density (Heatmap)
+
+The heatmap shows where businesses are most concentrated across New Orleans. Warmer colors indicate areas with higher business density, while cooler colors show lighter activity.
+
+![Business Density Heatmap](images/business_density_heatmap.png)
+
+---
+
+## Tools & Skills Used
+
+* **Python** (pandas, matplotlib, seaborn)
+* **Data Cleaning & Validation**
+* **Time‑Series Analysis**
+* **Geospatial Visualization (Folium heatmaps)**
+* **Data Storytelling & Documentation**
+
+---
+
+## Key Takeaways
+
+* Business activity shows clear **seasonal patterns**, with Q4 playing a significant role.
+* A small number of business types account for a large share of licenses.
+* Business density is **highly concentrated in specific ZIP codes**, reflecting commercial
+  hubs.
+* Long‑term trends provide more insight than single‑year changes.
+
+---
+
+## Notes
+
+This project emphasizes **clarity over complexity**. Each chart answers a specific question, and overlapping visuals were intentionally avoided to keep the analysis focused and readable.
