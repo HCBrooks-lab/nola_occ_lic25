@@ -52,7 +52,7 @@ This bar chart shows the **most common business types that start during Q4** acr
 
 ### 4. Geographic Business Density Map
 
-This map shows where new businesses tend to cluster across New Orleans. Brighter areas indicate more activity, and the clusters can be clicked to explore details for each location.
+This map shows where new businesses tend to cluster across New Orleans. Areas with larger or brighter circles indicate higher concentrations of business activity.
 
 ![Business Density Heatmap](images/business_density_map.png)
 
