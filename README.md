@@ -46,7 +46,7 @@ This chart focuses only on **Q4 (October–December)** business starts. Looking 
 
 This bar chart shows the **most common business types that start during Q4** across all years. It highlights which industries are most active at year‑end.
 
-![Top 10 Q4 Business Types](q4_top_10_business_types.png)
+![Top 10 Q4 Business Types]('images/q4_top_10_business_types.png')
 
 ---
 
@@ -54,7 +54,7 @@ This bar chart shows the **most common business types that start during Q4** acr
 
 This map shows where new businesses tend to cluster across New Orleans. Brighter areas indicate more activity, and the clusters can be clicked to explore details for each location.
 
-![Business Density Heatmap](business_density_map.png)
+![Business Density Heatmap]('images/business_density_map.png')
 
 ---
 
