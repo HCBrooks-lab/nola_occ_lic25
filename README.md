@@ -50,19 +50,11 @@ This bar chart shows the **most common business types that start during Q4** acr
 
 ---
 
-### 4. Year‑over‑Year Business Growth Trend
+### 4. Geographic Business Density Map
 
-This line chart visualizes overall year‑over‑year changes in new business starts. It helps distinguish short‑term dips from longer‑term recovery and growth trends.
+This map shows where new businesses tend to cluster across New Orleans. Brighter areas indicate more activity, and the clusters can be clicked to explore details for each location.
 
-![Year‑over‑Year Growth Trend](yoy_business_growth_trend.png)
-
----
-
-### 5. Geographic Business Density (Heatmap)
-
-The heatmap shows where businesses are most concentrated across New Orleans. Warmer colors indicate areas with higher business density, while cooler colors show lighter activity.
-
-![Business Density Heatmap](business_density_heatmap.png)
+![Business Density Heatmap](business_density_map.png)
 
 ---
 
