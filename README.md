@@ -24,7 +24,7 @@ Basic cleaning was performed before analysis (column normalization, date parsing
 
 ---
 
-## Key Analyses & Visuals
+## Key Analysis & Visuals
 
 ### 1. Business Starts Over Time - Yearly (2000–2026)
 
