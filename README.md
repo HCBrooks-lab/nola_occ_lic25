@@ -26,15 +26,15 @@ Basic cleaning was performed before analysis (column normalization, date parsing
 
 ## Key Analyses & Visuals
 
-### 1. Business Starts Over Time (2000–2026)
+### 1. Business Starts Over Time - Yearly (2000–2026)
 
 This chart shows how many new businesses started each year. It highlights long‑term growth patterns and year‑to‑year fluctuations rather than focusing on individual business details.
 
-![Business Starts Over Time](images/business_starts_over_time.png)
+![Businesses Starts Yearly](images/businesses_started_yearly.png)
 
 ---
 
-### 2. Q4 Business Starts by Year
+### 2. Q4 Business Starts by Year - Q4 of Each Year
 
 This chart focuses only on **Q4 (October–December)** business starts. Looking at Q4 separately helps reveal seasonal behavior tied to tourism, holidays, and year‑end planning.
 
@@ -46,31 +46,15 @@ This chart focuses only on **Q4 (October–December)** business starts. Looking 
 
 This bar chart shows the **most common business types that start during Q4** across all years. It highlights which industries are most active at year‑end.
 
-![Top 10 Q4 Business Types](images/top_10_business_types_q4.png)
+![Top 10 Q4 Business Types](images/q4_top_10_business_types.png)
 
 ---
 
-### 4. Top 5 Business Types Overall (2000–2026)
+### 4. Geographic Business Density Map
 
-This chart shows the five most common business types across the full dataset. It provides a high‑level view of the industries that dominate business activity in New Orleans.
+This map shows where new businesses tend to cluster across New Orleans. Brighter areas indicate more activity, and the clusters can be clicked to explore details for each location.
 
-![Top 5 Business Types Overall](images/top_5_business_types_overall.png)
-
----
-
-### 5. Year‑over‑Year Business Growth Trend
-
-This line chart visualizes overall year‑over‑year changes in new business starts. It helps distinguish short‑term dips from longer‑term recovery and growth trends.
-
-![Year‑over‑Year Growth Trend](images/yoy_business_growth_trend.png)
-
----
-
-### 6. Geographic Business Density (Heatmap)
-
-The heatmap shows where businesses are most concentrated across New Orleans. Warmer colors indicate areas with higher business density, while cooler colors show lighter activity.
-
-![Business Density Heatmap](images/business_density_heatmap.png)
+![Business Density Heatmap](images/business_density_map.png)
 
 ---
 
