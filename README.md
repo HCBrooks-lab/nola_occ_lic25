@@ -38,7 +38,7 @@ This chart shows how many new businesses started each year. It highlights long�
 
 This chart focuses only on **Q4 (October–December)** business starts. Looking at Q4 separately helps reveal seasonal behavior tied to tourism, holidays, and year‑end planning.
 
-![Q4 Business Starts by Year](images/q4_business_starts_by_year.png)
+![Q4 Business Starts by Year](q4_business_starts_by_year.png)
 
 ---
 
@@ -46,7 +46,7 @@ This chart focuses only on **Q4 (October–December)** business starts. Looking 
 
 This bar chart shows the **most common business types that start during Q4** across all years. It highlights which industries are most active at year‑end.
 
-![Top 10 Q4 Business Types](images/q4_top_10_business_types.png)
+![Top 10 Q4 Business Types](q4_top_10_business_types.png)
 
 ---
 
@@ -54,7 +54,7 @@ This bar chart shows the **most common business types that start during Q4** acr
 
 This line chart visualizes overall year‑over‑year changes in new business starts. It helps distinguish short‑term dips from longer‑term recovery and growth trends.
 
-![Year‑over‑Year Growth Trend](images/yoy_business_growth_trend.png)
+![Year‑over‑Year Growth Trend](yoy_business_growth_trend.png)
 
 ---
 
