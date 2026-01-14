@@ -62,7 +62,7 @@ This line chart visualizes overall year‑over‑year changes in new business st
 
 The heatmap shows where businesses are most concentrated across New Orleans. Warmer colors indicate areas with higher business density, while cooler colors show lighter activity.
 
-![Business Density Heatmap](images/business_density_heatmap.png)
+![Business Density Heatmap](business_density_heatmap.png)
 
 ---
 
