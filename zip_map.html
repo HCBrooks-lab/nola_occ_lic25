@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aea5ae1e37aead53ded515264a558851 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aea5ae1e37aead53ded515264a558851" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aea5ae1e37aead53ded515264a558851 = L.map(
+                "map_aea5ae1e37aead53ded515264a558851",
+                {
+                    center: [29.963452056658074, -90.0661452316417],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6da084e7a405bca109d820a78bd46fa1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6da084e7a405bca109d820a78bd46fa1.addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+            var heat_map_5cec79a5d35898d3e5e4e1846bd1a619 = L.heatLayer(
+                [[29.970327229423347, -90.10879459598804, 1], [29.95498354568129, -90.07362386981191, 57], [29.94383564843599, -90.07996903917595, 37], [29.933000493928077, -90.03034342546249, 15], [29.924784095498328, -90.10017770788676, 97], [29.96137386806674, -90.06185695008651, 183], [29.967972400211096, -90.04255686778218, 52], [29.94776306599192, -90.12543498286438, 56], [29.973101689274962, -90.08960706369704, 73], [29.977013741971707, -90.09914622666162, 1], [30.00688937387205, -90.06095453087092, 30], [30.005739192645546, -90.10974637608088, 33], [29.95093344304361, -90.10154796950548, 12], [30.015646789502558, -90.01866640380592, 11], [30.03096121134585, -89.97864314150992, 12], [30.046753417576944, -89.9577888714436, 6], [30.042368105392534, -89.90839340435092, 8], [29.94587977119803, -90.06968126975795, 223], [29.91891229323911, -89.99677047572847, 9], [29.95001302165305, -90.07108399827656, 7], [30.03093621782081, -90.07241123277608, 2], [29.949930335248375, -90.07548322760309, 7], [29.95195818408955, -90.07028951890074, 4]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 13,
+  "radius": 28,
+  "blur": 22,
+}
+            );
+        
+    
+            heat_map_5cec79a5d35898d3e5e4e1846bd1a619.addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+            var circle_marker_2a9ed3ec46b522816ae3f4c5a6625ba0 = L.circleMarker(
+                [29.970327229423347, -90.10879459598804],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_1022677e755a687d5f27bd757391bb9f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62b9892906bc16668fd494ca691531d0 = $(`<div id="html_62b9892906bc16668fd494ca691531d0" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70019<br><b>Top Business Type:</b> Lessors of Residential Bulidings & Dwellings<br><b>Count:</b> 1</div>`)[0];
+                popup_1022677e755a687d5f27bd757391bb9f.setContent(html_62b9892906bc16668fd494ca691531d0);
+            
+        
+
+        circle_marker_2a9ed3ec46b522816ae3f4c5a6625ba0.bindPopup(popup_1022677e755a687d5f27bd757391bb9f)
+        ;
+
+        
+    
+    
+            circle_marker_2a9ed3ec46b522816ae3f4c5a6625ba0.bindTooltip(
+                `<div>
+                     70019 – Lessors of Residential Bulidings & Dwellings
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db12f76f23c45a2d2f40c7b91e90c6d6 = L.circleMarker(
+                [29.95498354568129, -90.07362386981191],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_010a3597bfe0ce3443a36398b66eb029 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75d2aac2385c1d5792405a9a819312c9 = $(`<div id="html_75d2aac2385c1d5792405a9a819312c9" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70112<br><b>Top Business Type:</b> Full Service Restaurants(table service available)<br><b>Count:</b> 57</div>`)[0];
+                popup_010a3597bfe0ce3443a36398b66eb029.setContent(html_75d2aac2385c1d5792405a9a819312c9);
+            
+        
+
+        circle_marker_db12f76f23c45a2d2f40c7b91e90c6d6.bindPopup(popup_010a3597bfe0ce3443a36398b66eb029)
+        ;
+
+        
+    
+    
+            circle_marker_db12f76f23c45a2d2f40c7b91e90c6d6.bindTooltip(
+                `<div>
+                     70112 – Full Service Restaurants(table service available)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_99571d2858540d473da6d9bfb50c4076 = L.circleMarker(
+                [29.94383564843599, -90.07996903917595],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_dba9506034b23df5c314008ba10f2ad0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9305ba3afc72a05147cf79797244426b = $(`<div id="html_9305ba3afc72a05147cf79797244426b" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70113<br><b>Top Business Type:</b> Taxi Service<br><b>Count:</b> 37</div>`)[0];
+                popup_dba9506034b23df5c314008ba10f2ad0.setContent(html_9305ba3afc72a05147cf79797244426b);
+            
+        
+
+        circle_marker_99571d2858540d473da6d9bfb50c4076.bindPopup(popup_dba9506034b23df5c314008ba10f2ad0)
+        ;
+
+        
+    
+    
+            circle_marker_99571d2858540d473da6d9bfb50c4076.bindTooltip(
+                `<div>
+                     70113 – Taxi Service
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6d53d7c53db6957a9a61de88efcb1957 = L.circleMarker(
+                [29.933000493928077, -90.03034342546249],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_030e2c3ac76d1e89a8c08ec46e90ee8a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3aa5eaee2f13dfecc8592dbb3c6e81c7 = $(`<div id="html_3aa5eaee2f13dfecc8592dbb3c6e81c7" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70114<br><b>Top Business Type:</b> Flea Market<br><b>Count:</b> 15</div>`)[0];
+                popup_030e2c3ac76d1e89a8c08ec46e90ee8a.setContent(html_3aa5eaee2f13dfecc8592dbb3c6e81c7);
+            
+        
+
+        circle_marker_6d53d7c53db6957a9a61de88efcb1957.bindPopup(popup_030e2c3ac76d1e89a8c08ec46e90ee8a)
+        ;
+
+        
+    
+    
+            circle_marker_6d53d7c53db6957a9a61de88efcb1957.bindTooltip(
+                `<div>
+                     70114 – Flea Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ca19f579bcc94d0957de4a89969448f5 = L.circleMarker(
+                [29.924784095498328, -90.10017770788676],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_17bbbe65d85f1af3d4be732ab70936f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a95b85ddb1504eb4fbbd400243771dd3 = $(`<div id="html_a95b85ddb1504eb4fbbd400243771dd3" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70115<br><b>Top Business Type:</b> Full Service Restaurants(table service available)<br><b>Count:</b> 97</div>`)[0];
+                popup_17bbbe65d85f1af3d4be732ab70936f6.setContent(html_a95b85ddb1504eb4fbbd400243771dd3);
+            
+        
+
+        circle_marker_ca19f579bcc94d0957de4a89969448f5.bindPopup(popup_17bbbe65d85f1af3d4be732ab70936f6)
+        ;
+
+        
+    
+    
+            circle_marker_ca19f579bcc94d0957de4a89969448f5.bindTooltip(
+                `<div>
+                     70115 – Full Service Restaurants(table service available)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6b4815a3899a85512dca0af8fee6a550 = L.circleMarker(
+                [29.96137386806674, -90.06185695008651],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_bb34baa88d0dc66053096026db411974 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_edb799e0eb9d9919f718955e0a1d94ea = $(`<div id="html_edb799e0eb9d9919f718955e0a1d94ea" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70116<br><b>Top Business Type:</b> Flea Market<br><b>Count:</b> 183</div>`)[0];
+                popup_bb34baa88d0dc66053096026db411974.setContent(html_edb799e0eb9d9919f718955e0a1d94ea);
+            
+        
+
+        circle_marker_6b4815a3899a85512dca0af8fee6a550.bindPopup(popup_bb34baa88d0dc66053096026db411974)
+        ;
+
+        
+    
+    
+            circle_marker_6b4815a3899a85512dca0af8fee6a550.bindTooltip(
+                `<div>
+                     70116 – Flea Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69a46f3eda8df9042bbcf77296c68f6d = L.circleMarker(
+                [29.967972400211096, -90.04255686778218],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_9d445f269ed7b9eeb8579bffaafa8de1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5030d1fce754f08e71d26a1e741c302 = $(`<div id="html_e5030d1fce754f08e71d26a1e741c302" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70117<br><b>Top Business Type:</b> Full Service Restaurants(table service available)<br><b>Count:</b> 52</div>`)[0];
+                popup_9d445f269ed7b9eeb8579bffaafa8de1.setContent(html_e5030d1fce754f08e71d26a1e741c302);
+            
+        
+
+        circle_marker_69a46f3eda8df9042bbcf77296c68f6d.bindPopup(popup_9d445f269ed7b9eeb8579bffaafa8de1)
+        ;
+
+        
+    
+    
+            circle_marker_69a46f3eda8df9042bbcf77296c68f6d.bindTooltip(
+                `<div>
+                     70117 – Full Service Restaurants(table service available)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5240140e3d897eeef99abc19b17048bb = L.circleMarker(
+                [29.94776306599192, -90.12543498286438],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_a8f83bc99b3e280659e96607efe31f15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2d7753549c04f8c89851aeff183668c = $(`<div id="html_f2d7753549c04f8c89851aeff183668c" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70118<br><b>Top Business Type:</b> Full Service Restaurants(table service available)<br><b>Count:</b> 56</div>`)[0];
+                popup_a8f83bc99b3e280659e96607efe31f15.setContent(html_f2d7753549c04f8c89851aeff183668c);
+            
+        
+
+        circle_marker_5240140e3d897eeef99abc19b17048bb.bindPopup(popup_a8f83bc99b3e280659e96607efe31f15)
+        ;
+
+        
+    
+    
+            circle_marker_5240140e3d897eeef99abc19b17048bb.bindTooltip(
+                `<div>
+                     70118 – Full Service Restaurants(table service available)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_150e3b09b943e113b33408bd806b87df = L.circleMarker(
+                [29.973101689274962, -90.08960706369704],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_2fe0b1ace8a395b0a19c2f2bafa237fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0e08ad484aadcbb35f28bb1c4575c2e = $(`<div id="html_f0e08ad484aadcbb35f28bb1c4575c2e" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70119<br><b>Top Business Type:</b> Full Service Restaurants(table service available)<br><b>Count:</b> 73</div>`)[0];
+                popup_2fe0b1ace8a395b0a19c2f2bafa237fe.setContent(html_f0e08ad484aadcbb35f28bb1c4575c2e);
+            
+        
+
+        circle_marker_150e3b09b943e113b33408bd806b87df.bindPopup(popup_2fe0b1ace8a395b0a19c2f2bafa237fe)
+        ;
+
+        
+    
+    
+            circle_marker_150e3b09b943e113b33408bd806b87df.bindTooltip(
+                `<div>
+                     70119 – Full Service Restaurants(table service available)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6d88ff766918658da480180ea0080ac3 = L.circleMarker(
+                [29.977013741971707, -90.09914622666162],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_75e2acfbb0fb0a8b9bba508c0ca942fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ccf57301be06db74b7e476ca77e6fb7 = $(`<div id="html_5ccf57301be06db74b7e476ca77e6fb7" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70121<br><b>Top Business Type:</b> Pet & Pet Supplies Stores<br><b>Count:</b> 1</div>`)[0];
+                popup_75e2acfbb0fb0a8b9bba508c0ca942fa.setContent(html_5ccf57301be06db74b7e476ca77e6fb7);
+            
+        
+
+        circle_marker_6d88ff766918658da480180ea0080ac3.bindPopup(popup_75e2acfbb0fb0a8b9bba508c0ca942fa)
+        ;
+
+        
+    
+    
+            circle_marker_6d88ff766918658da480180ea0080ac3.bindTooltip(
+                `<div>
+                     70121 – Pet & Pet Supplies Stores
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e8534ad53af0395bb82b7bede068155c = L.circleMarker(
+                [30.00688937387205, -90.06095453087092],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_00e8f32d869a8113207b02a9b0754a4b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7850d219dcd0e5525d689a2cacdd151a = $(`<div id="html_7850d219dcd0e5525d689a2cacdd151a" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70122<br><b>Top Business Type:</b> Special Events-Other (Vendor)<br><b>Count:</b> 30</div>`)[0];
+                popup_00e8f32d869a8113207b02a9b0754a4b.setContent(html_7850d219dcd0e5525d689a2cacdd151a);
+            
+        
+
+        circle_marker_e8534ad53af0395bb82b7bede068155c.bindPopup(popup_00e8f32d869a8113207b02a9b0754a4b)
+        ;
+
+        
+    
+    
+            circle_marker_e8534ad53af0395bb82b7bede068155c.bindTooltip(
+                `<div>
+                     70122 – Special Events-Other (Vendor)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc7ff900f0155cabc4e51900047e5ed0 = L.circleMarker(
+                [30.005739192645546, -90.10974637608088],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_230ae3444ad0fdb7a9be7375b8741a01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1991f69f8fc03e0565069c00b6e722f4 = $(`<div id="html_1991f69f8fc03e0565069c00b6e722f4" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70124<br><b>Top Business Type:</b> Full Service Restaurants(table service available)<br><b>Count:</b> 33</div>`)[0];
+                popup_230ae3444ad0fdb7a9be7375b8741a01.setContent(html_1991f69f8fc03e0565069c00b6e722f4);
+            
+        
+
+        circle_marker_fc7ff900f0155cabc4e51900047e5ed0.bindPopup(popup_230ae3444ad0fdb7a9be7375b8741a01)
+        ;
+
+        
+    
+    
+            circle_marker_fc7ff900f0155cabc4e51900047e5ed0.bindTooltip(
+                `<div>
+                     70124 – Full Service Restaurants(table service available)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f2288cae25fc2ff373efe643aeadf9f = L.circleMarker(
+                [29.95093344304361, -90.10154796950548],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_9741130057e834e0debca290167161dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8248c7942bf04f7335dbd13f21910d6d = $(`<div id="html_8248c7942bf04f7335dbd13f21910d6d" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70125<br><b>Top Business Type:</b> Full Service Restaurants(table service available)<br><b>Count:</b> 12</div>`)[0];
+                popup_9741130057e834e0debca290167161dc.setContent(html_8248c7942bf04f7335dbd13f21910d6d);
+            
+        
+
+        circle_marker_7f2288cae25fc2ff373efe643aeadf9f.bindPopup(popup_9741130057e834e0debca290167161dc)
+        ;
+
+        
+    
+    
+            circle_marker_7f2288cae25fc2ff373efe643aeadf9f.bindTooltip(
+                `<div>
+                     70125 – Full Service Restaurants(table service available)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c99d6d11c2c723f9c1f1da33021b9d51 = L.circleMarker(
+                [30.015646789502558, -90.01866640380592],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_f262b43e26b1a53335416701a446ffb6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_857984b6b5b01c8e39ff4a32a8902b30 = $(`<div id="html_857984b6b5b01c8e39ff4a32a8902b30" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70126<br><b>Top Business Type:</b> Hotels(except Casino Hotels) & Motels<br><b>Count:</b> 11</div>`)[0];
+                popup_f262b43e26b1a53335416701a446ffb6.setContent(html_857984b6b5b01c8e39ff4a32a8902b30);
+            
+        
+
+        circle_marker_c99d6d11c2c723f9c1f1da33021b9d51.bindPopup(popup_f262b43e26b1a53335416701a446ffb6)
+        ;
+
+        
+    
+    
+            circle_marker_c99d6d11c2c723f9c1f1da33021b9d51.bindTooltip(
+                `<div>
+                     70126 – Hotels(except Casino Hotels) & Motels
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef51cbb88c20ea873577a26f1cfb9483 = L.circleMarker(
+                [30.03096121134585, -89.97864314150992],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_e8f727e4976c82c524227355298d39d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2cda99d05f6920d2cfce351d8a9736b = $(`<div id="html_e2cda99d05f6920d2cfce351d8a9736b" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70127<br><b>Top Business Type:</b> Full Service Restaurants(table service available)<br><b>Count:</b> 12</div>`)[0];
+                popup_e8f727e4976c82c524227355298d39d2.setContent(html_e2cda99d05f6920d2cfce351d8a9736b);
+            
+        
+
+        circle_marker_ef51cbb88c20ea873577a26f1cfb9483.bindPopup(popup_e8f727e4976c82c524227355298d39d2)
+        ;
+
+        
+    
+    
+            circle_marker_ef51cbb88c20ea873577a26f1cfb9483.bindTooltip(
+                `<div>
+                     70127 – Full Service Restaurants(table service available)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a7956f1da7001e15897d6c73d97be19 = L.circleMarker(
+                [30.046753417576944, -89.9577888714436],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_3bbd99c68007944a0ac1ac7e67633a56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b413bde811b19893e900ca75f665c5b = $(`<div id="html_8b413bde811b19893e900ca75f665c5b" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70128<br><b>Top Business Type:</b> Limited Service Restaurants(no table service available)<br><b>Count:</b> 6</div>`)[0];
+                popup_3bbd99c68007944a0ac1ac7e67633a56.setContent(html_8b413bde811b19893e900ca75f665c5b);
+            
+        
+
+        circle_marker_0a7956f1da7001e15897d6c73d97be19.bindPopup(popup_3bbd99c68007944a0ac1ac7e67633a56)
+        ;
+
+        
+    
+    
+            circle_marker_0a7956f1da7001e15897d6c73d97be19.bindTooltip(
+                `<div>
+                     70128 – Limited Service Restaurants(no table service available)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8812d77d7fff3d1b5b47d934a4f9f911 = L.circleMarker(
+                [30.042368105392534, -89.90839340435092],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_41fd96d1f1063daa09c5c039b17e4da8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_421667b48fd8cc48483d55ea85a06f51 = $(`<div id="html_421667b48fd8cc48483d55ea85a06f51" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70129<br><b>Top Business Type:</b> Convenience Stores<br><b>Count:</b> 8</div>`)[0];
+                popup_41fd96d1f1063daa09c5c039b17e4da8.setContent(html_421667b48fd8cc48483d55ea85a06f51);
+            
+        
+
+        circle_marker_8812d77d7fff3d1b5b47d934a4f9f911.bindPopup(popup_41fd96d1f1063daa09c5c039b17e4da8)
+        ;
+
+        
+    
+    
+            circle_marker_8812d77d7fff3d1b5b47d934a4f9f911.bindTooltip(
+                `<div>
+                     70129 – Convenience Stores
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b7b47e3d9f1255ba13af4c64a9ef2c90 = L.circleMarker(
+                [29.94587977119803, -90.06968126975795],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_c986e3e41549d725d0c39c617bf25af3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12251cbd7ad4e3c0bbfc422248532da2 = $(`<div id="html_12251cbd7ad4e3c0bbfc422248532da2" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70130<br><b>Top Business Type:</b> Full Service Restaurants(table service available)<br><b>Count:</b> 223</div>`)[0];
+                popup_c986e3e41549d725d0c39c617bf25af3.setContent(html_12251cbd7ad4e3c0bbfc422248532da2);
+            
+        
+
+        circle_marker_b7b47e3d9f1255ba13af4c64a9ef2c90.bindPopup(popup_c986e3e41549d725d0c39c617bf25af3)
+        ;
+
+        
+    
+    
+            circle_marker_b7b47e3d9f1255ba13af4c64a9ef2c90.bindTooltip(
+                `<div>
+                     70130 – Full Service Restaurants(table service available)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0620b0cbefae3f7f1a7af08c13ac23f9 = L.circleMarker(
+                [29.91891229323911, -89.99677047572847],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_47f0c4965fe2797842d3ea433b558eb1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b16102c8f9cac8205f0f440822ded6f1 = $(`<div id="html_b16102c8f9cac8205f0f440822ded6f1" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70131<br><b>Top Business Type:</b> Special Events-Other (Vendor)<br><b>Count:</b> 9</div>`)[0];
+                popup_47f0c4965fe2797842d3ea433b558eb1.setContent(html_b16102c8f9cac8205f0f440822ded6f1);
+            
+        
+
+        circle_marker_0620b0cbefae3f7f1a7af08c13ac23f9.bindPopup(popup_47f0c4965fe2797842d3ea433b558eb1)
+        ;
+
+        
+    
+    
+            circle_marker_0620b0cbefae3f7f1a7af08c13ac23f9.bindTooltip(
+                `<div>
+                     70131 – Special Events-Other (Vendor)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d3581c81379d9ec320e50ca492093aa = L.circleMarker(
+                [29.95001302165305, -90.07108399827656],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_2fff6cca378f342dbd148e9ca667189a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e6124e68c536440d73a26a65b1bbe00 = $(`<div id="html_0e6124e68c536440d73a26a65b1bbe00" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70139<br><b>Top Business Type:</b> Offices of Lawyers<br><b>Count:</b> 7</div>`)[0];
+                popup_2fff6cca378f342dbd148e9ca667189a.setContent(html_0e6124e68c536440d73a26a65b1bbe00);
+            
+        
+
+        circle_marker_4d3581c81379d9ec320e50ca492093aa.bindPopup(popup_2fff6cca378f342dbd148e9ca667189a)
+        ;
+
+        
+    
+    
+            circle_marker_4d3581c81379d9ec320e50ca492093aa.bindTooltip(
+                `<div>
+                     70139 – Offices of Lawyers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fbd11729f6229e6b3d61cf4453eb0d63 = L.circleMarker(
+                [30.03093621782081, -90.07241123277608],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_91bed2635d092ba2cbc013ca51fb27a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a6ae57df02174dc0aac4843f8ecaa05 = $(`<div id="html_5a6ae57df02174dc0aac4843f8ecaa05" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70148<br><b>Top Business Type:</b> Civic & Social Organizations<br><b>Count:</b> 2</div>`)[0];
+                popup_91bed2635d092ba2cbc013ca51fb27a2.setContent(html_5a6ae57df02174dc0aac4843f8ecaa05);
+            
+        
+
+        circle_marker_fbd11729f6229e6b3d61cf4453eb0d63.bindPopup(popup_91bed2635d092ba2cbc013ca51fb27a2)
+        ;
+
+        
+    
+    
+            circle_marker_fbd11729f6229e6b3d61cf4453eb0d63.bindTooltip(
+                `<div>
+                     70148 – Civic & Social Organizations
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e7ae4cc04ce7700310e8fe64322453ac = L.circleMarker(
+                [29.949930335248375, -90.07548322760309],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_055ef14bfb1234892fad50ec7ad7ed6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ece56dd14799c612a62d673b990d54f1 = $(`<div id="html_ece56dd14799c612a62d673b990d54f1" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70163<br><b>Top Business Type:</b> Offices of Lawyers<br><b>Count:</b> 7</div>`)[0];
+                popup_055ef14bfb1234892fad50ec7ad7ed6e.setContent(html_ece56dd14799c612a62d673b990d54f1);
+            
+        
+
+        circle_marker_e7ae4cc04ce7700310e8fe64322453ac.bindPopup(popup_055ef14bfb1234892fad50ec7ad7ed6e)
+        ;
+
+        
+    
+    
+            circle_marker_e7ae4cc04ce7700310e8fe64322453ac.bindTooltip(
+                `<div>
+                     70163 – Offices of Lawyers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0973e013addfcf3a73643b31e0c29ab6 = L.circleMarker(
+                [29.95195818408955, -90.07028951890074],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+        var popup_ab414b3f7b406c87a9d1271e4af31dc5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_afdb0d12e1e6bad0edfc205e46a0a3aa = $(`<div id="html_afdb0d12e1e6bad0edfc205e46a0a3aa" style="width: 100.0%; height: 100.0%;"><b>ZIP Code:</b> 70170<br><b>Top Business Type:</b> Construction Material Wholesalers, Other<br><b>Count:</b> 4</div>`)[0];
+                popup_ab414b3f7b406c87a9d1271e4af31dc5.setContent(html_afdb0d12e1e6bad0edfc205e46a0a3aa);
+            
+        
+
+        circle_marker_0973e013addfcf3a73643b31e0c29ab6.bindPopup(popup_ab414b3f7b406c87a9d1271e4af31dc5)
+        ;
+
+        
+    
+    
+            circle_marker_0973e013addfcf3a73643b31e0c29ab6.bindTooltip(
+                `<div>
+                     70170 – Construction Material Wholesalers, Other
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_6da084e7a405bca109d820a78bd46fa1.addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+    
+            heat_map_5cec79a5d35898d3e5e4e1846bd1a619.addTo(map_aea5ae1e37aead53ded515264a558851);
+        
+</script>
+</html>
