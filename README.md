@@ -14,7 +14,7 @@ The analysis focuses on:
 ## Live Interactive Site
 
 Explore the interactive maps and visual dashboards here:  
-**https://HCBrooks-lab.github.io/nola_occ_licenses25/**
+**[https://HCBrooks-lab.github.io/nola_occ_licenses25/](https://hcbrooks-lab.github.io/nola_occ_lic26/)**
 
 ---
 
